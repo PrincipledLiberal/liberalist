@@ -1,0 +1,54 @@
+{
+  prefix [ org liberalist ]
+  name [ website ]
+  description 'liberalist.org website'
+  version 0.1.0
+  language kotlin
+  developer
+  {
+    name PrincipledLiberal
+    githubName PrincipledLiberal
+    mavenUserName PrincipledLiberal
+    organization PrincipledLiberal
+    url https://liberalist.org
+  }
+  dependencies
+  {
+    stdlib
+    {
+      group org.jetbrains.kotlin
+      artifact kotlin-stdlib-jdk8
+    }
+    test
+    {
+      group org.jetbrains.kotlin
+      artifact kotlin-test-junit
+      scope test
+    }
+    flexmark {
+      group    com.vladsch.flexmark
+      artifact flexmark-all
+    }
+    jackson {
+        group    com.fasterxml.jackson.module
+        artifact jackson-module-kotlin
+    }
+    aws-s3 {
+        group    com.amazonaws
+        artifact aws-java-sdk-s3
+    }
+  }
+  global
+  [
+    stdlib
+    test
+  ]
+  modules
+  {
+    domain [ flexmark jackson aws-s3 ]
+  }
+  mavenPlugin []
+  consoleEntryPoint {
+    console org.liberalist.website.DeploySiteAppKt
+  }
+}

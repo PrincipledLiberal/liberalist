@@ -1,0 +1,114 @@
+{
+  "a": {
+    "tabBars": [
+      [
+        {
+          "name": "a",
+          "title": "A Title",
+          "selected": true
+        },
+        {
+          "name": "c",
+          "title": "C Title",
+          "selected": false
+        },
+        {
+          "name": "e",
+          "title": "E Title",
+          "selected": false
+        }
+      ]
+    ],
+    "content": "a.html"
+  },
+  "c": {
+    "tabBars": [
+      [
+        {
+          "name": "a",
+          "title": "A Title",
+          "selected": false
+        },
+        {
+          "name": "c",
+          "title": "C Title",
+          "selected": true
+        },
+        {
+          "name": "e",
+          "title": "E Title",
+          "selected": false
+        }
+      ],
+      [
+        {
+          "name": "c",
+          "title": "C Title",
+          "selected": true
+        },
+        {
+          "name": "d",
+          "title": "D Title",
+          "selected": false
+        }
+      ]
+    ],
+    "content": "b/c.html"
+  },
+  "d": {
+    "tabBars": [
+      [
+        {
+          "name": "a",
+          "title": "A Title",
+          "selected": false
+        },
+        {
+          "name": "c",
+          "title": "C Title",
+          "selected": true
+        },
+        {
+          "name": "e",
+          "title": "E Title",
+          "selected": false
+        }
+      ],
+      [
+        {
+          "name": "c",
+          "title": "C Title",
+          "selected": false
+        },
+        {
+          "name": "d",
+          "title": "D Title",
+          "selected": true
+        }
+      ]
+    ],
+    "content": "b/d.html"
+  },
+  "e": {
+    "tabBars": [
+      [
+        {
+          "name": "a",
+          "title": "A Title",
+          "selected": false
+        },
+        {
+          "name": "c",
+          "title": "C Title",
+          "selected": false
+        },
+        {
+          "name": "e",
+          "title": "E Title",
+          "selected": true
+        }
+      ]
+    ],
+    "content": "e.html"
+  }
+}
