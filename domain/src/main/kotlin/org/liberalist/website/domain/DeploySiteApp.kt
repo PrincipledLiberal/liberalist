@@ -1,5 +1,5 @@
 package org.liberalist.website.domain
 
 fun main(args: Array<String>) {
-    DependencyInjection(args).deploySiteRunner.run()
+    DependencyInjectionCommandLine(args).runner.run()
 }

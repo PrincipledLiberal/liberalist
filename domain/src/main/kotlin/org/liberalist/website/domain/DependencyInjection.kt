@@ -1,54 +1,32 @@
 package org.liberalist.website.domain
 
-import com.amazonaws.regions.Regions
-import com.amazonaws.services.s3.AmazonS3ClientBuilder
 import org.liberalist.website.domain.contract.FilesContract
 import org.liberalist.website.domain.contract.FilesDelegate
-import org.liberalist.website.domain.credentials.CredentialsProvider
-import org.liberalist.website.domain.s3.S3ApiClient
-import org.liberalist.website.domain.secrets.SecretsImpl
 import java.nio.charset.Charset
 import java.nio.charset.StandardCharsets
 import java.nio.file.Path
 import java.nio.file.Paths
 
-class DependencyInjection(args: Array<String>) {
-    private val secrets = SecretsImpl(
-            awsAccessKeyId = args[0],
-            awsSecretKey = args[1]
-    )
-    private val deployToLocation = args.getOrNull(2) ?: "local"
-    private val credentialsProvider =
-            CredentialsProvider(secrets.awsAccessKeyId, secrets.awsSecretKey)
+abstract class DependencyInjection {
     private val baseDir: Path = Paths.get(".")
     private val sourceDir: Path = baseDir.resolve("content")
-    private val generatedDir: Path = baseDir.resolve(Paths.get("build", "html"))
+    protected val generatedDir: Path = baseDir.resolve(Paths.get("build", "html"))
     private val sourceStaticDir: Path = baseDir.resolve("static")
-    private val emitLine: (String) -> Unit = ::println
-    private val files: FilesContract = MonitoredFiles(FilesDelegate, emitLine)
+    protected val emitLine: (String) -> Unit = ::println
+    protected val files: FilesContract = MonitoredFiles(FilesDelegate, emitLine)
     private val charset: Charset = StandardCharsets.UTF_8
     private val markdownToHtmlConverter: MarkdownToHtmlConverter = FlexmarkConverter
-    private val staticContentCopier: StaticContentCopier = StaticContentCopierImpl(
+    protected val staticContentCopier: StaticContentCopier = StaticContentCopierImpl(
             files, sourceStaticDir, generatedDir)
-    private val contentScanner: ContentScanner = ContentScannerImpl(files, sourceDir)
-    private val htmlGenerator: HtmlGenerator = HtmlGeneratorImpl(
+    protected val contentScanner: ContentScanner = ContentScannerImpl(files, sourceDir)
+    protected val htmlGenerator: HtmlGenerator = HtmlGeneratorImpl(
             sourceDir, generatedDir, files, markdownToHtmlConverter, charset)
     private val modelFactory: ModelFactory = ModelFactoryImpl()
-    private val modelGenerator: ModelGenerator = ModelGeneratorImpl(
+    protected val modelGenerator: ModelGenerator = ModelGeneratorImpl(
             generatedDir,
             files,
             charset,
             modelFactory)
-    private val bucketName = "liberalist.org"
-    private val region = Regions.US_EAST_1
-    private val s3Client = AmazonS3ClientBuilder.standard().withCredentials(credentialsProvider).withRegion(region).build()
-    private val s3Api = S3ApiClient(s3Client, bucketName, emitLine)
-    private val uploader: Uploader = UploaderS3(s3Api, generatedDir, files)
-    val deploySiteRunner: Runnable = DeploySite(
-            contentScanner,
-            htmlGenerator,
-            staticContentCopier,
-            modelGenerator,
-            uploader,
-            deployToLocation)
+    protected abstract val uploader: Uploader
+    abstract val deploySiteRunner: Runnable
 }
