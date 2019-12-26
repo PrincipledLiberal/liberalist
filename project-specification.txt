@@ -49,6 +49,6 @@
   }
   mavenPlugin []
   consoleEntryPoint {
-    console org.liberalist.website.DeploySiteAppKt
+    domain org.liberalist.website.domain.DeploySiteApp
   }
 }
