@@ -43,12 +43,12 @@ class DependencyInjection(args: Array<String>) {
     private val region = Regions.US_EAST_1
     private val s3Client = AmazonS3ClientBuilder.standard().withCredentials(credentialsProvider).withRegion(region).build()
     private val s3Api = S3ApiClient(s3Client, bucketName, emitLine)
-    private val s3Uploader: S3Uploader = S3UploaderImpl(s3Api, generatedDir, files)
+    private val uploader: Uploader = UploaderS3(s3Api, generatedDir, files)
     val deploySiteRunner: Runnable = DeploySite(
             contentScanner,
             htmlGenerator,
             staticContentCopier,
             modelGenerator,
-            s3Uploader,
+            uploader,
             deployToLocation)
 }

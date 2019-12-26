@@ -8,10 +8,10 @@ import java.nio.file.FileVisitor
 import java.nio.file.Path
 import java.nio.file.attribute.BasicFileAttributes
 
-class S3UploaderImpl(private val s3Api: S3Api,
-                     private val generated: Path,
-                     private val files: FilesContract) : S3Uploader {
-    override fun uploadToS3() {
+class UploaderS3(private val s3Api: S3Api,
+                 private val generated: Path,
+                 private val files: FilesContract) : Uploader {
+    override fun upload() {
         s3Api.ensureBucketExists()
         val visitor = object : FileVisitor<Path> {
             override fun postVisitDirectory(dir: Path?, exc: IOException?): FileVisitResult =
