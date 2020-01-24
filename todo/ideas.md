@@ -1,0 +1,11 @@
+- Offended is not oppressed
+- Individual freedom trumps subjective feelings
+- Identify as an individual, not a group characteristic
+- Democracy is not invalid just because some people don't get their way in an election
+- Not being able to oppress others is not being oppressed
+- Nothing can make people equally rich, but enough tyranny can make everyone equally poor
+- Ideas should not be dismissed just because the one expressing them does have enough oppression points
+- People should be free to choose how successful they want to be
+- You as an individual are more interesting than your group identity
+- Government should operate based on reason and evidence with a solid foundation grounded in the principle of individual freedom
+- Those who, upon loosing an argument, desperately search for people saying mean things about them on the internet so they can cry bullying and harassment, do not make their argument any more valid
