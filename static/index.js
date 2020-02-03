@@ -15,6 +15,7 @@ const modelPromise = fragmentLib.loadJsonFromUrl('model.json');
 const createDiv = () => document.createElement('div');
 const createUl = () => document.createElement('ul');
 const createLi = () => document.createElement('li');
+
 const createLink = (args) => {
     const {href, text} = args;
     const a = document.createElement('a');
@@ -23,14 +24,22 @@ const createLink = (args) => {
     return a;
 };
 
+const createTab = (args) => {
+    const {href} = args;
+    const li = createLi();
+    li.setAttribute('onclick', "location.href='" + window.location.pathname + href + "';");
+    li.setAttribute('style', 'cursor:pointer;');
+    const link = createLink(args);
+    li.appendChild(link);
+    return li;
+};
+
 const renderTabBar = (args) => {
     const {tabBar, index} = args;
     const ul = createUl();
     ul.classList.add('nav-' + index);
     const appendTab = (tab) => {
-        const li = createLi();
-        const link = createLink({href: '?page=' + tab.name, text: tab.title});
-        li.appendChild(link);
+        const li = createTab({href: '?page=' + tab.name, text: tab.title});
         if (tab.selected) {
             li.classList.add('selected');
         }
