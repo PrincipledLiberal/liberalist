@@ -53,7 +53,7 @@ Here is an attempt to summarize liberalist principles by breaking the philosophy
     - Liberalists just call these "rights", they are not subject to being voted away by a majority
 - Group rights
     - This type of right is considered a contradiction in terms, groups can not have rights.
-      Individuals may voluntarily join groups for access to privileges granted by that group,
+      Individuals may voluntarily join groups,
       but no group may force an individual to remain part of that group.  
 - Natural rights
     - Rights are not determined by human laws, they are universal and inalienable.
