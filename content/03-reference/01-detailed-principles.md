@@ -60,7 +60,7 @@ Here is an attempt to summarize liberalist principles by breaking the philosophy
       They are inherent and can not be granted by government,
       although government may justly restrain individuals from interfering with the rights of others. 
 
-### Top ten summary
+### Top ten principles
 
 - Individual Rights
     - Protecting the rights of the individual must be the highest value of society, to foster mutual tolerance and respect towards the cultivation of the dignity of every person.
