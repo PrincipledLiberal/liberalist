@@ -13,13 +13,13 @@ protection from arbitrary authority, and freedom of action that does not infring
 While many liberal ideas pre-dated the enlightenment and did not even originate from enlightenment thinkers,
 it is the undermining of church and monarchal authority,
 along with the spreading of ideas outside of established institutions,
-that set this time period apart.   
+that sets this time period apart.   
 
 While advocates for enlightenment liberalism (liberalists) can disagree on a great many topics,
-what we share is a value for individuals freely expressing their ideas, no matter how disagreeable, 
+we all value individuals freely expressing their ideas, no matter how disagreeable, 
 and applying reason, evidence, logic, and facts to resolve our differences in civil debate.
-No liberalist would try to deplatform, hecklers veto, or censor an idea, no matter how much we disagree with it,
-but criticism, ridicule, and even trolling are fair game, so long as we respond to bad ideas with better ideas, not violence.  
+No liberalist would try to deplatform, hecklers veto, or censor an idea, no matter how much we disagree with it.
+However, criticism, ridicule, and even trolling are fair game, so long as we respond to bad ideas with better ideas, not violence.  
 
 Here is an attempt to summarize liberalist principles by breaking the philosophy down into easily understandable parts.
 
@@ -33,7 +33,7 @@ Here is an attempt to summarize liberalist principles by breaking the philosophy
     - Citizens with moral agency
 - State
     - A compulsory political organization with a centralized government that maintains a monopoly of the legitimate use of force within a certain geographical territory
-- Monarchy, Aristocracy, Democracy
+- Monarchy, Aristocracy, Democracy (using definitions from Thomas Hobbs' Leviathan)
     - Monarchy: 1 person votes
     - Aristocracy: Some people vote
     - Democracy: All people vote (includes pure democracy and representative systems)
@@ -43,8 +43,22 @@ Here is an attempt to summarize liberalist principles by breaking the philosophy
 - Rights
     - Liberalists recognize negative rights, individual rights, and natural rights.
       The concept of positive rights is rejected, we would call these privileges.
-      The concept of group rights is rejected (including cultural rights and rights based on identity).
-      Rights are inherent an inalienable to all beings with moral agency, they are not granted by government.
+      The concept of group rights is rejected.
+      Rights are inherent and inalienable to all beings with moral agency, they are not granted by government.
+- Negative rights
+    - Negative rights oblige inaction from others
+- Positive rights
+    - Positive rights oblige action from others
+- Individual rights
+    - Liberalists just call these "rights", they are not subject to being voted away by a majority
+- Group rights
+    - This type of right is considered a contradiction in terms, groups can not have rights.
+      Individuals may voluntarily join groups for access to privileges granted by that group,
+      but no group may force an individual to remain part of that group.  
+- Natural rights
+    - Rights are not determined by human laws, they are universal and inalienable.
+      They are inherent and can not be granted by government,
+      although government may justly restrain individuals from interfering with the rights of others. 
 
 ### Top ten summary
 
