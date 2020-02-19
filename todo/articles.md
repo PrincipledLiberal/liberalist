@@ -5,3 +5,4 @@
 - what are the principles of liberalism?
 - digital bill of rights
 - liberal code of conduct
+- price gouging

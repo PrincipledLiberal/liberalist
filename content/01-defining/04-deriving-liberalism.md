@@ -1,5 +1,5 @@
-# Essence of Liberalism
- 
+# Deriving Liberalism
+
 The essence of liberalism is derivable from only two principles.
 Objective truth, and individual freedom.
 
@@ -20,3 +20,4 @@ The state must be both strong enough to responsibly guard freedom against outsid
 To ensure citizens make informed decisions in democratic elections, the freedom of expressing any idea must be absolute and protected by the state.
 Economic freedom is required not only as a matter of principle, but it is also necessary to maintain a self reliant, educated, and prosperous citizenry that can afford the effort it takes to democratically keep the state from abusing power.
 Unequal amounts of prosperity granted by the free market are a necessary and desirable consequence of individuals having the freedom to choose the level of innovation, effort, and risk they are willing to contribute to society.
+
