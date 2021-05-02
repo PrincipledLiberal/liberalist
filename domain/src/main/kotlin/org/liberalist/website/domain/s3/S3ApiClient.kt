@@ -60,7 +60,10 @@ class S3ApiClient(
             "js" to "application/javascript; charset=UTF-8",
             "md" to "text/markdown",
             "mov" to "video/quicktime",
-            "m4a" to "audio/mp4"
+            "m4a" to "audio/mp4",
+            "mp4" to "video/mp4",
+            "avi" to "video/x-msvideo",
+            "wmv" to "video/x-ms-wmv"
         )
     }
 }

@@ -1,6 +1,6 @@
 # Youtube
 
-Sorted ascending by duration
+Here is a collection of videos that address modern opposition to liberal principles, sorted ascending by duration
 
 ## Black History Month
 
@@ -31,6 +31,11 @@ Sorted ascending by duration
 
 (11:
 28) [DNC Chair Candidate Wants to "Shut White People Down" | My Formal Divorce from the Democratic Party](https://www.youtube.com/watch?v=QTHFLqJfdq8)
+
+## Personal Responsibility
+
+(13:
+30) [Personal responsibility and changing the system (Jordan Peterson & Bret Weinstein)](https://www.youtube.com/watch?v=ngjiLGnTn7g)
 
 ## George Floyd
 

@@ -1,5 +1,4 @@
 # Principles
-(first 7 from [liberalists.org](http://liberalists.org/principles/))
 
 - Individual Rights
     - Protecting the rights of the individual must be the highest value of society, to foster mutual tolerance and respect towards the cultivation of the dignity of every person.
